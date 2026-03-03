@@ -14,7 +14,7 @@ services:
     networks:
       - _________-zone  # (1.6) ต้องเชื่อมกับวงปิดสำหรับ DB
     volumes:
-      - __________:var/lib/mysql  # (1.7) เติมชื่อ Named Volume [9]
+      - __________:var/lib/mysql  # (1.7) เติมชื่อจาก Named Volume [9]
     secrets:
       - __________ # (1.8) เติมชื่อ Secret ที่ประกาศด้านล่าง [10]
 

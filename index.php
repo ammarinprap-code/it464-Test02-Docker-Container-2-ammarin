@@ -4,7 +4,7 @@ $host = '___________'; // แก้ไขให้ตรงกับค่าท
 $user = '___________'; // แก้ไขให้ตรงกับค่าที่อยู่ใน Docker Compose หรือ .env
 $db   = '___________'; // แก้ไขให้ตรงกับค่าที่อยู่ใน Docker Compose หรือ .env
 
-// 2. กฎเหล็กด้านความปลอดภัย: อ่านรหัสผ่านจาก Docker Secret [4, 7]
+// 2. กฎเหล็กด้านความปลอดภัย: อ่านรหัสผ่านจาก Docker Secret แทนการเขียนไว้ในโค้ด [7]
 $secret_path = '/run/secrets/db_pass';
 $pass = trim(file_get_contents($secret_path));
 
